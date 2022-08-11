@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Slayt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="audience" content="all">
+<meta name="Robots" content="INDEX,FOLLOW">
+<meta name="revisit-after" content="2 days">
+<meta name="Language" content="Turkish">
+<link href="css/NivoSlider.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable Text Selection script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+function disableSelection(target){
+if (typeof target.onselectstart!="undefined") //IE route
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!="undefined") //Firefox route
+	target.style.MozUserSelect="none"
+else //All other route (ie: Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = "default"
+}
+
+//Sample usages
+//disableSelection(document.body) //Disable text selection on entire body
+//disableSelection(document.getElementById("mydiv")) //Disable text selection on element with id="mydiv"
+
+</script>
+
+</head>
+
+<body class="ap-spot-iframe">
+
+        <div id="slider-wrapper">
+            <div id="slider" class="nivoSlider">
+				
+                <img src="images/01_3.jpg" alt>
+				<img src="images/02_3.jpg" alt>
+				<img src="images/03_3.jpg" alt>
+				<img src="images/04_3.jpg" alt>
+				
+
+				
+				
+               
+                
+               
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+            	$('#slider').nivoSlider();
+            });
+        </script>  
+
+</body>
+
+</html>
