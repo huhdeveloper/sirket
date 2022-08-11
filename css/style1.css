@@ -1,0 +1,22 @@
+.body2 {
+	}
+a.img_rol11:link, .img_rol9{
+FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Tahoma,  Arial, Helvetica, sans-serif; TEXT-DECORATION: none;
+width:143px;
+height:32px;
+display:inline-table;
+
+vertical-align:middle;
+margin: 0 0 0 0;
+padding: 6px 0 0 0;
+border-width:0px;
+}
+a.img_rol9:hover{
+FONT-SIZE: 10px; COLOR: #ffff00; FONT-FAMILY: Verdana, Tahoma,  Arial, Helvetica, sans-serif; TEXT-DECORATION: none;
+width:143px;
+height:32px;
+
+margin: 0 0 0 0;
+border-width:0px;
+padding: 6px 0 0 0;
+}

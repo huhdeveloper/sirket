@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#7d7d7d;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:15px 20px 15px 20px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:40%;
+	z-index:95;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:95;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+#slider-wrapper {
+    width:1100px;
+    height:445px;
+    margin:0 auto;}
+
+#slider {
+	position:relative;
+    width:1100px;
+    height:445px;
+	background:url(../images/loading.gif) no-repeat 50% 50%;}
+	
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;}
+	
+#slider a {
+	border:0;
+	display:block;}
+
+.nivo-controlNav {
+	position:absolute;
+	
+	left:450px;/* Altta çıkan yuvarlakların ortalama yapılıyor */
+	
+	bottom:-30px;} /* Altta çıkan yuvarlakların yukarı aşağıya ayarlıyor */
+	
+.nivo-controlNav a {
+	display:block;
+	width:50px; /* Altta çıkan yuvarlakların birbirine olan mesafesini ayarlıyor */
+	height:22px;
+	
+	background:url(../images/navi.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-left:0;
+	float:left;}
+	
+.nivo-controlNav a.active {
+	background-position:0 -22px;}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;}
+	
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:0;}
+	
+a.nivo-prevNav {
+	left:0;}
